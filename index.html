@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			@font-face {
+				font-family: summer-pixel;
+				src: url(/PixeloidSans.ttf);
+			}
+
+			img {
+				height: 400px;
+			}
+
+			body {
+				margin: 0;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				display: flex;
+
+				-webkit-font-smoothing: none;
+				font-family: summer-pixel;
+			}
+
+			div {
+				margin-left: 10px;
+			}
+
+			#imageid {
+				color: grey;
+				font-size: 0.75rem;
+			}
+		</style>
+	</head>
+	<body>
+		<img id="image" />
+		<div>
+			<h1>twosharks</h1>
+			<p>Hi! i'm twosharks.</p>
+			<p>I draw funny animals</p>
+			<p>sometimes</p>
+			<br />
+			<p>If you wanna talk, i'm on discord: bluesharks#9869</p>
+			<p id="imageid"></p>
+		</div>
+
+		<script>
+			let id = Math.floor(Math.random() * 6);
+			document.getElementById("image").src = `pfp${id}.png`;
+			document.getElementById("imageid").innerHTML = `image ${
+				id + 1
+			} of 7`;
+		</script>
+	</body>
+</html>
