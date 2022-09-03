@@ -4,11 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>twosharks</title>
 
 		<style>
 			@font-face {
-				font-family: summer-pixel;
+				font-family: pixeloidSans;
 				src: url(/PixeloidSans.ttf);
 			}
 
@@ -24,7 +24,7 @@
 				display: flex;
 
 				-webkit-font-smoothing: none;
-				font-family: summer-pixel;
+				font-family: pixeloidSans;
 			}
 
 			div {
@@ -50,11 +50,11 @@
 		</div>
 
 		<script>
-			let id = Math.round(Math.random() * 6);
+			let id = Math.round(Math.random() * 4);
 			document.getElementById("image").src = `pfp${id}.png`;
 			document.getElementById("imageid").innerHTML = `image ${
 				id + 1
-			} of 7`;
+			} of 5`;
 		</script>
 	</body>
 </html>
