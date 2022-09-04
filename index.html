@@ -50,11 +50,10 @@
 		</div>
 
 		<script>
-			let id = Math.round(Math.random() * 4);
+			let id = Math.round(Math.random()) + 1;
+
 			document.getElementById("image").src = `pfp${id}.png`;
-			document.getElementById("imageid").innerHTML = `image ${
-				id + 1
-			} of 5`;
+			document.getElementById("imageid").innerHTML = `image ${id} of 2`;
 		</script>
 	</body>
 </html>
